@@ -1,0 +1,47 @@
+.counter-app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .counter-app h1 {
+    margin-bottom: 10px;
+  }
+  
+  .counter-app h3 {
+    font-size: 24px;
+    margin: 10px 0 20px;
+  }
+  
+  .counter-app .counter-button button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Specific button styling using nth-child */
+  .counter-app .counter-button button:nth-child(1) {
+    background-color: #e74c3c; /* red */
+    color: white;
+  }
+  
+  .counter-app .counter-button button:nth-child(2) {
+    background-color: #27ae60; /* green */
+    color: white;
+  }
+  
+  .counter-app .counter-button button:nth-child(3) {
+    background-color: white;
+    color: #333;
+    border: 2px solid #ccc;
+  }
+  
+  /* Hover effect */
+  .counter-app .counter-button button:hover {
+    opacity: 0.85;
+  }
+  
