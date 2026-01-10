@@ -4,10 +4,11 @@ import { LoginComponent } from './login/login.component';
 import { CounterAppComponent } from './counter-app/counter-app.component';
 import { GetSetFuncComponent } from './get-set-func/get-set-func.component';
 import { SignalsComponent } from './signals/signals.component';
+import { TodoComponent } from './todo/todo.component';
 
 @Component({
   selector: 'app-root',
-  imports: [LoginComponent,CounterAppComponent,GetSetFuncComponent,SignalsComponent],
+  imports: [LoginComponent,CounterAppComponent,GetSetFuncComponent,SignalsComponent,TodoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
