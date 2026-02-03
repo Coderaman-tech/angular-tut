@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { CounterAppComponent } from './counter-app/counter-app.component';
-import { GetSetFuncComponent } from './get-set-func/get-set-func.component';
-import { SignalsComponent } from './signals/signals.component';
-import { TodoComponent } from './todo/todo.component';
-
+import { RouterLink, RouterOutlet } from '@angular/router';
+  
 @Component({
   selector: 'app-root',
-  imports: [LoginComponent,CounterAppComponent,GetSetFuncComponent,SignalsComponent,TodoComponent],
+  imports: [RouterLink,RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

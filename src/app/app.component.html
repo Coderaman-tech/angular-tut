@@ -1,16 +1,15 @@
-<h1>Hi aman</h1>
-<app-login></app-login>
-<button (click)="sumTwoVariable(3,4)">Click me</button>
-
-<hr>
-
-<app-counter></app-counter>
-
-<hr>
-<app-get-set-func></app-get-set-func>
-
-<hr>
-<app-signals></app-signals>
-
-<hr>
-<app-todo></app-todo>
+<ul>
+  <li>
+    <a routerLink="/counter">Counter</a>
+  </li>
+  <li>
+    <a routerLink="/get-set-func">Get Set Func</a>
+  </li>
+  <li>
+    <a routerLink="/signals">Signals</a>
+  </li>
+  <li>
+    <a routerLink="/todo">Todo App</a>
+  </li>
+</ul>
+<router-outlet />
