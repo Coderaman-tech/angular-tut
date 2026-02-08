@@ -12,6 +12,7 @@ export const routes: Routes = [
     {path:'signals',component:SignalsComponent},
     {path:'todo',component:TodoComponent},
     {path:'',component:HomeComponent},
+    //Wild Card Routing
     {path:"**",component:PageNotFoundComponent}
 
 ];
