@@ -5,6 +5,7 @@ import { SignalsComponent } from './signals/signals.component';
 import { TodoComponent } from './todo/todo.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProfileComponent } from './profile/profile.component';
 
 export const routes: Routes = [
     {path:'counter',component:CounterAppComponent},
@@ -12,6 +13,7 @@ export const routes: Routes = [
     {path:'signals',component:SignalsComponent},
     {path:'todo',component:TodoComponent},
     {path:'',component:HomeComponent},
+    {path:'profile',component:ProfileComponent,data:{name:'Aman'}},
     //Wild Card Routing
     {path:"**",component:PageNotFoundComponent}
 
