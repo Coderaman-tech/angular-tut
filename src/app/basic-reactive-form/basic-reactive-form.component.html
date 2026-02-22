@@ -1,0 +1,11 @@
+<p>Basic of Reactive forms</p>
+
+<form action="">
+    <input type="text" placeholder="Enter name" [formControl]="name">
+    <br>
+    <br>
+    <input type="text" placeholder="Enter password" [formControl]="password">
+    <br><br>
+    <button type="button" (click)="displayValue()">Login</button>
+    <button type="button" (click)="setValues()">Set Values in Fields</button>
+</form>
