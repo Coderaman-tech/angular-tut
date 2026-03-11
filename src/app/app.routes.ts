@@ -9,6 +9,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { UserComponent } from './user/user.component';
 import { BasicReactiveFormComponent } from './basic-reactive-form/basic-reactive-form.component';
 import { ReactiveFormsGroupComponent } from './reactive-forms-group/reactive-forms-group.component';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 
 export const routes: Routes = [
     {path:'counter',component:CounterAppComponent},
@@ -20,6 +21,7 @@ export const routes: Routes = [
     {path:'user/:id/:name',component:UserComponent},
     {path:'basic-reactive-forms',component:BasicReactiveFormComponent},
     {path:'reactive-forms-group',component:ReactiveFormsGroupComponent},
+    {path:'template-driven-form',component:TemplateDrivenFormComponent},
     //Wild Card Routing
     {path:"**",component:PageNotFoundComponent}
 
