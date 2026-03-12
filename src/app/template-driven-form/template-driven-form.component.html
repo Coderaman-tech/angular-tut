@@ -1,21 +1,28 @@
 <h1>Template driven forms</h1>
 <form #userForm="ngForm" (ngSubmit)="addDetails(userForm.value)">
-  <input type="text" placeholder="Enter name" name="name" ngModel />
-  <br /><br />
-  <input type="password" placeholder="Enter password" name="password" ngModel />
-  <br /><br />
-  <select name="gender" ngModel>
-    <option value="">Select Gender</option>
-    <option value="male">Male</option>
-    <option value="female">Female</option>
-  </select>
-  <br /><br />
-  <input type="range" min="0" max="20" name="range" ngModel />
-  <button>Add User</button>
+    <input #name="ngModel" type="text" placeholder="Enter name" name="name" ngModel required />
+    <span class="error" *ngIf="name.invalid && name.touched">Name is required</span>
+    <br /><br />
+
+    <input #password="ngModel" minlength="5" maxlength="10" type="password" placeholder="Enter password" name="password" ngModel required />
+    <span class="error" *ngIf="password.invalid && password.touched">Please enter valid password</span>
+    <br /><br />
+
+    <select #gender="ngModel" name="gender" ngModel required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <span class="error" *ngIf="gender.invalid && gender.touched">Please choose gender</span>
+    <br /><br />
+
+    <input #range="ngModel" type="range" min="0" max="20" name="range" ngModel required />
+    <span class="error" *ngIf="range.invalid && range.touched">Please choose age</span>
+    <br><br>
+    <button [disabled]="userForm.invalid">Add User</button>
 </form>
 
 <h3>{{userDetails?.name}}</h3>
 <h3>{{userDetails?.password}}</h3>
 <h3>{{userDetails?.gender}}</h3>
 <h3>{{userDetails?.range}}</h3>
-
