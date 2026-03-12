@@ -19,4 +19,5 @@ export class AppComponent {
   sumTwoVariable(a:number,b:number){
     console.log(a+b);
   }
+  
 }

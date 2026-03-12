@@ -1,0 +1,8 @@
+<h2>Pass data from parent to child</h2>
+<app-customer [customerName]="customer" [customerCity]="city"></app-customer>
+<select #selectedUser (change)="onCustomerChange(selectedUser.value)" name="" id="">
+    <option value="Aman">Aman</option>
+    <option value="Akash">Akash</option>
+    <option value="Amit">Amit</option>
+    <option value="Aryan">Aryan</option>
+</select>
