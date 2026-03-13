@@ -12,6 +12,7 @@ import { ReactiveFormsGroupComponent } from './reactive-forms-group/reactive-for
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ParentCustomerComponent } from './parent-customer/parent-customer.component';
 import { ChildParentComponent } from './child-parent/child-parent.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 export const routes: Routes = [
     {path:'counter',component:CounterAppComponent},
@@ -26,6 +27,7 @@ export const routes: Routes = [
     {path:'template-driven-form',component:TemplateDrivenFormComponent},
     {path:'parent-customer',component:ParentCustomerComponent},
     {path:'child-parent',component:ChildParentComponent},
+    {path:'pipe',component:PipeComponent},
     //Wild Card Routing
     {path:"**",component:PageNotFoundComponent}
 

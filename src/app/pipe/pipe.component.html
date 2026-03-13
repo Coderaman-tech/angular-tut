@@ -1,0 +1,17 @@
+<h2>Pipes in Angular</h2>
+
+<p>{{title}}</p>
+<p>{{title | uppercase}}</p>
+<p>{{title | titlecase}}</p>
+<p>{{title | lowercase}}</p>
+
+<p>{{date | date}}</p>
+<p>{{date | date:'fullDate'}}</p>
+<p>{{date | date:'hh:mm:ss'}}</p>
+
+<p>{{amount | currency}}</p>
+<p>{{amount | currency:'EUR'}}</p>
+<p>{{amount | currency:'INR'}}</p>
+
+<!-- Apply two pipes -->
+<p>{{date | date:'fullDate' | uppercase}}</p>
